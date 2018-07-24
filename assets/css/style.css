@@ -1,0 +1,100 @@
+body {
+    font-family: 'Montserrat';
+
+    font-weight: 400;
+
+    display: flex;
+    min-height: 100;
+    flex-direction: column;
+    background-repeat: repeat-x;
+    }
+
+
+main {
+    flex: 1 0 auto;
+}
+
+
+#header {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 45px;
+}
+
+#intructions {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 30px 0;
+    background-color: transparent;
+    text-align:center;
+    
+}
+
+#introSection {
+    margin-top: 40px;
+}
+
+
+#buttonRow {
+    margin-top: 85px;
+}
+
+.btn-large {
+    border-radius: 6px;
+    border: #ffffff 4px solid;
+    line-height: 45px;
+    color: #ffffff;
+    background-color: transparent;
+    margin-left:80%;
+    margin-right:80%;
+}
+
+.btn-large:hover {
+    color: yellowgreen;
+    border: yellowgreen 3px dashed;
+}
+
+
+
+
+#questionSoccer {
+    color: #ffffff;
+    margin-top: 40px;
+ 
+    padding: 10px;
+    width: 1000px;
+    height: 500px;
+}
+
+#question {
+    font-size: 37px;
+}
+
+
+
+
+#timer {
+    color: #e74c3c;
+    font-size: 47px;
+}
+
+
+#choices {
+    font-size: 23px;
+}
+
+.pickAnswer {
+    border: solid 5px #ffffff;
+}
+
+.pickAnswer, .pickAnswer:hover {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.pickAnswer:hover {
+    border: solid 5px yellowgreen;
+    cursor: pointer;
+}
