@@ -46,7 +46,7 @@ $(document).ready(function () {
                 clearInterval(myInterval);
                 currentQuestionIndex++;
                 $('#timer').effect("pulsate", {
-                    times: 25
+                    times: 30
                 }, 1000 * 5);
                 i = 30;
                 postQuestion(currentQuestionIndex);
@@ -145,8 +145,7 @@ $(document).ready(function () {
             
             if (userChoice === questions[currentQuestionIndex].answer) {
                 correctCounter++;
-                currentQuestionIndex++
-                randomCongrats();
+                currentQuestionIndex++;
 
             } else {
                 incorrectCounter++;
