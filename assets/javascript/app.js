@@ -1,15 +1,13 @@
 $(document).ready(function () {
-    $("#introSection").hide();
     $("#messageSection").hide();
     $('.tooltipped').tooltip({ // delay function for button tool tips
         delay: 50
     });
-
-
-    $("#introSection").fadeIn(1000 * 5, function () { // fade in page elements
+    $("#instructions").fadeIn(1000 * 5, function () { // fade in page elements
         // fadeIn function
     });
 
+    
     $("#questionSoccer").hide()
     var correctCounter = 0,
         incorrectCounter = 0,
@@ -17,16 +15,12 @@ $(document).ready(function () {
         unansweredCounter = 0;
 
 
-    var congratsMessages = ['Great going player', 'Good Job!', "To the Pitch you go!"];
-
     function randomNum(x) {
         var roll = Math.floor(Math.random() * x);
         return roll;
     }
 
-    function randomCongrats() {
-        var messageRoll = randomNum(congratsMessages.length);
-    }
+  
 
     function countDown() {
         $('.pickAnswer').click(function () {
@@ -165,6 +159,7 @@ $(document).ready(function () {
 
     function startTrivia() {
         $('#messageSection').hide();
+        $('#instructions').hide();
         $('#gameMessage').empty()
         $('#questionContainer').show();
         $('#choices').show();
